@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 string mensagemDeBoasVindas = "Boas vindas ao Screen Sound";
+List<string> listaDasBandas = new List<string>();
 
 void ExibirLogo()
 {
@@ -59,6 +60,7 @@ void RegistrarBanda()
   Console.WriteLine("Registro de bandas");
   Console.Write("Digite o nome da banda que quer registrar: ");
   string nomeDaBanda = Console.ReadLine()!;
+  listaDasBandas.Add(nomeDaBanda);
   Console.WriteLine($"A banda {nomeDaBanda} foi registrada com sucesso!");
   Thread.Sleep(2000);
   Console.Clear();
